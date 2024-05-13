@@ -9,7 +9,7 @@ import { recurseInvestmentSteps } from '../../support/utils'
 
 describe('Sanity on Staging with express checkout changes', function () {
   beforeEach(() => {
-    cy.setAuthCookie('tip-selection@f64pcc5w.mailosaur.net', 'Abc123!!')
+    cy.setAuthCookie(userName, passWord)
     Cypress.on('uncaught:exception', () => {
       return false
     })

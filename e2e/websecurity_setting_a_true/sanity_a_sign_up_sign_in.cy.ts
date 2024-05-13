@@ -27,7 +27,7 @@ describe('Sanity test suite on Staging', function () {
     cy.get('a[href*="/u/signup"]').contains('Create new account').click()
     cy.get('[name=email]').clear().type(emailAddress)
     cy.get('button').contains('Continue').click()
-    cy.get('[name=password]').type('Abc123!!')
+    cy.get('[name=password]').type(passWord)
     cy.get('#signup_has_agreed').check()
     cy.get('button')
       .contains('Create new account')
